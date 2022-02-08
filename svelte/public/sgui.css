@@ -1,0 +1,123 @@
+:root {
+
+    --color-frame: #1B2224;
+    --color-frame-title: #A4ABAA;
+    --color-frame-close-button: #F46067;
+
+}
+
+.sgui-window {
+
+    border-radius: 0.4rem;
+    overflow: hidden;
+
+}
+
+.sgui-window.min {
+
+    border-radius: 0;
+
+}
+
+.sgui-frame {
+
+    width: 100%;
+    height: auto;
+
+    background-color: red;
+
+}
+.sgui-frame-header {
+
+    width: 100%;
+    height: 2rem;
+
+    background-color: var(--color-frame);
+
+    /* DISPLAY SECTION */
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.sgui-frame-header-wrapper {
+
+    width: 33.33%;
+    height: 100%;
+
+}
+
+.sgui-frame-header-wrapper.title {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-frame-title);
+
+}
+
+.sgui-frame-header-wrapper.buttons {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+.sgui-frame-header-wrapper.buttons .frame-close-button {
+
+    background-color: var(--color-frame-close-button);
+
+}
+
+.sgui-frame-header-wrapper.buttons button {
+
+    width: 1rem;
+    height: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    margin: 0rem 0.5rem 0rem 0rem;
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    font-size: 0.9rem;
+
+}
+
+.sgui-frame-menu-wrapper {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+}
+
+.sgui-frame-menu-wrapper button {
+
+    padding: 0.25rem 0.5rem;
+
+    outline: none;
+    border: none;
+    border-radius: 0;
+
+    font-size: 0.85rem;
+
+}
